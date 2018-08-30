@@ -1,6 +1,8 @@
 React + Bootstrap 4 Inbox
 ==
 
+Play with it: https://oopq5jz82y.codesandbox.io/
+
 Inbox loads data from json
 
 Open message in modal
