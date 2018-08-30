@@ -1,0 +1,86 @@
+[
+  {
+    "id": 1,
+    "from": "Gary Lewis",
+    "fromAddress": "test@foofoo.com",
+    "subject": "Posting on board",
+    "dtSent": "Today, 9:18AM",
+    "read": false,
+    "body": "Hey Mark,<br><br>I saw your post on the message board and I was wondering if you still had that item available. Can you call me if you still do?<br><br>Thanks,<br><b>Gary Lewis</b>"
+  },
+  {
+    "id": 2,
+    "from": "Bob Sutton",
+    "fromAddress": "test@testdomain.com",
+    "subject": "In Late Today",
+    "dtSent": "Today, 8:54AM",
+    "read": false,
+    "body": "Mark,<br>I will be in late today due to an appt.<br>v/r Bob",
+    "attachment": false
+  },
+  {
+    "id": 3,
+    "from": "Will Adivo",
+    "fromAddress": "test@testbar.com",
+    "subject": "New developer",
+    "dtSent": "Yesterday, 4:48PM",
+    "read": true,
+    "body": "Here is the last resume for the developer position we posted on SO. Please review and let me know your thoughts!",
+    "attachment": true
+  },
+  {
+    "id": 4,
+    "from": "Al Kowalski",
+    "fromAddress": "test@domain.com",
+    "subject": "RE: New developer",
+    "dtSent": "Yesterday, 4:40PM",
+    "read": false,
+    "body": "I looked at the resume, but the guy looks like a moron.",
+    "priority": 1
+  },
+  {
+    "id": 4,
+    "from": "Beth Maloney",
+    "fromAddress": "test@mail.com",
+    "subject": "July Reports",
+    "dtSent": "3 Days Ago",
+    "read": true,
+    "body": "PYC Staff-<br> Our weekly meeting is canceled due to the holiday. Please review and submit your PID report before next week's meeting.<br>Thanks,<br>Beth"
+  },
+  {
+    "id": 6,
+    "from": "Jason Furgano",
+    "fromAddress": "test@domain.com",
+    "subject": "New developer",
+    "dtSent": "3 Days Ago",
+    "read": true,
+    "body": "All,<br>I'd like to introduce Joe Canfigliata our new S/W developer. If you see him in the office introduce yourself and make him feel welcome."
+  },
+  {
+    "id": 7,
+    "from": "Bob Sutton",
+    "fromAddress": "test@test.com",
+    "subject": "Tasking request",
+    "dtSent": "3 Days Ago",
+    "read": true,
+    "body": "Ovi lipsu doir. The message body goes here..."
+  },
+  {
+    "id": 8,
+    "from": "Will Adivo",
+    "fromAddress": "test@test.com",
+    "subject": "Proposal for Avid Consulting",
+    "dtSent": "3 Days Ago",
+    "read": true,
+    "body": "Mark, I reviewed your proposal with Beth and we have a few questions. Let me know when you time to meet."
+  },
+  {
+    "id": 9,
+    "from": "Philip Corrigan",
+    "fromAddress": "test@testdomain.com",
+    "subject": "Follow-up Appt.",
+    "dtSent": "4 Days Ago",
+    "read": true,
+    "body": "Hi,<br>Can you please confirm the expense report I submitted for my last trip to SD?<br>Thanks,<br>Tom Grey"
+  }
+]
