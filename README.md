@@ -1,7 +1,7 @@
 React + Bootstrap 4 Inbox
 ==
 
-Play with it: https://oopq5jz82y.codesandbox.io/
+Play with it: https://llzykynvnq.codesandbox.io/
 
 Inbox loads data from json
 

@@ -16,10 +16,10 @@ export const InboxHtml = ({ parent }) => {
                 >
                   Compose <i className="align-middle icon-pencil" />
                 </button>
-                <div className="nav py-2 flex-md-column justify-content-center">
+                <div className="nav nav-pills py-2 flex-md-column justify-content-center">
                   <a
-                    href=""
-                    className="nav-link text-muted px-md-1 active"
+                    href={true.toString()}
+                    className="nav-link active"
                     title="Messages"
                     data-toggle="tab"
                     data-target="#messages"
@@ -32,8 +32,8 @@ export const InboxHtml = ({ parent }) => {
                     />
                   </a>
                   <a
-                    href={true}
-                    className="nav-link text-muted px-md-1"
+                    href={true.toString()}
+                    className="nav-link"
                     title="Deleted"
                     data-toggle="tab"
                     data-target="#deleted"
@@ -42,8 +42,8 @@ export const InboxHtml = ({ parent }) => {
                     <span className="d-none d-md-inline">Deleted</span>
                   </a>
                   <a
-                    href=""
-                    className="nav-link text-muted px-md-1"
+                    href={true.toString()}
+                    className="nav-link"
                     title="Drafts"
                     data-toggle="tab"
                     data-target="#drafts"
@@ -52,8 +52,8 @@ export const InboxHtml = ({ parent }) => {
                     <span className="d-none d-md-inline">Drafts</span>
                   </a>
                   <a
-                    href=""
-                    className="nav-link text-muted px-md-1"
+                    href={true.toString()}
+                    className="nav-link"
                     title="Calendar"
                     data-toggle="tab"
                     data-target="#calendar"
@@ -110,7 +110,7 @@ export const InboxHtml = ({ parent }) => {
                         />
                         <div className="dropdown-menu" id="dd1">
                           <a
-                            href
+                            href={true.toString()}
                             className="dropdown-item"
                             onClick={parent.deleteMarked}
                           >
@@ -155,6 +155,7 @@ export const InboxHtml = ({ parent }) => {
                                   className="custom-control-input"
                                   name={"check" + idx}
                                   checked={item.marked === 1}
+                                  onChange={() => parent.toggleMark(idx)}
                                 />
                                 <label
                                   className="custom-control-label text-nowrap"
@@ -172,7 +173,7 @@ export const InboxHtml = ({ parent }) => {
                             </div>
                             <div className="col-auto px-0 order-last order-sm-2 d-none d-sm-block align-self-center text-right">
                               <a
-                                href={true}
+                                href={true.toString()}
                                 className="text-secondary px-md-1"
                                 title="Deleted"
                                 onClick={() => parent.doDelete(idx)}
@@ -193,7 +194,7 @@ export const InboxHtml = ({ parent }) => {
                               </div>
                               <p className="lead mb-0">
                                 <a
-                                  href={true}
+                                  href={true.toString()}
                                   title={
                                     !item.read
                                       ? "This is a new message"
@@ -221,7 +222,7 @@ export const InboxHtml = ({ parent }) => {
                   {parent.state.deleted && parent.state.deleted.length > 0
                     ? parent.state.deleted.map((item, idx) => (
                         <div className="col-12" key={idx}>
-                          <a href="">
+                          <a href>
                             {item.from} ({item.fromAddress})
                             <span className="px-2">
                               {item.subject.substring(0, 20)}...
