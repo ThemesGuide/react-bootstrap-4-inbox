@@ -15,7 +15,7 @@ export const HeaderHtml = () => {
                     </a>
                   </div>
                   <div className="col-lg text-center text-lg-left">
-                    <h1 className="font-weight-light d-inline h2">
+                    <h1 className="font-weight-light d-inline">
                       <span className="text-dark">React Inbox App</span>
                     </h1>
                     <h6>A working template with Bootstrap 4</h6>
