@@ -1,7 +1,12 @@
 React + Bootstrap 4 Inbox
 ==
 
+![React Inbox Screenshot](https://pbs.twimg.com/media/Dl7aY_5VsAAQImX.jpg)
+
 Demo: <https://llzykynvnq.codesandbox.io/>
+
+Features
+--
 
 Inbox loads data from json
 
