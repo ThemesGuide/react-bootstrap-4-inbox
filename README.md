@@ -1,7 +1,7 @@
 React + Bootstrap 4 Inbox
 ==
 
-Play with it: <https://llzykynvnq.codesandbox.io/>
+Demo: <https://llzykynvnq.codesandbox.io/>
 
 Inbox loads data from json
 
@@ -16,3 +16,7 @@ Mark items as "deleted"
 Mark single items or toggle all
 
 View deleted items
+
+
+
+<http://themes.guide>
