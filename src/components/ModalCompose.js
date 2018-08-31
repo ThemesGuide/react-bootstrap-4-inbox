@@ -40,16 +40,17 @@ export class ModalCompose extends React.Component {
             <div className="modal-body">
               <form className="form" role="form" autoComplete="off">
                 <div className="form-row py-2">
-                  <label htmlFor="name2" className="col-sm-2 mb-0">
+                  <label htmlFor="sendTo" className="col-sm-2 mb-0">
                     To
                   </label>
                   <div className="col">
                     <input
                       type="text"
-                      name="name2"
-                      id="name2"
+                      name="sendTo"
+                      id="sendTo"
                       className="form-control"
                       required=""
+                      value={this.props.sendTo}
                     />
                   </div>
                 </div>
@@ -82,24 +83,25 @@ export class ModalCompose extends React.Component {
                   </div>
                 </div>
                 <div className="form-row py-2">
-                  <div className="col offset-2">
+                  <div className="col-sm-auto py-1">
                     <button
                       type="submit"
-                      className="btn btn-outline-secondary btn-lg"
+                      className="btn btn-outline-secondary btn-block"
                     >
-                      Attachments <i className="align-middle icon-paper-clip" />
+                      Attachments
+                      <i className="align-middle icon-paper-clip fa fa-paperclip ml-1" />
                     </button>
                   </div>
-                  <div className="col">
+                  <div className="col py-1">
                     <button
                       type="submit"
-                      className="btn btn-secondary btn-lg float-right ml-2"
+                      className="btn btn-secondary float-right ml-1"
                     >
                       Send Message
                     </button>
                     <button
                       type="submit"
-                      className="btn btn-outline-secondary btn-lg float-right"
+                      className="btn btn-outline-secondary float-right"
                     >
                       Save Draft
                     </button>

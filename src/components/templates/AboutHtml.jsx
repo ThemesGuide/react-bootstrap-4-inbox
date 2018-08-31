@@ -12,6 +12,9 @@ export const AboutHtml = () => {
         <span>Mark items as "deleted"</span>
         <span>Mark single items or toggle all</span>
         <span>View deleted items</span>
+        <span>Refresh/reload messages</span>
+        <span>Unread messages count</span>
+        <span>Deleted messages count</span>
       </div>
     </div>
   );

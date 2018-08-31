@@ -52,6 +52,13 @@ export class ModalMessage extends React.Component {
                   <small className="text-uppercase text-muted">Sent</small>
                   <h6>{this.props.message.dtSent}</h6>
                 </div>
+                <div className="col-sm-12">
+                  <p
+                    dangerouslySetInnerHTML={{
+                      __html: this.props.message.body
+                    }}
+                  />
+                </div>
               </div>
               <p className="my-3" />
               <button
@@ -64,6 +71,8 @@ export class ModalMessage extends React.Component {
               <button
                 className="btn btn-outline-primary float-right"
                 data-dismiss="modal"
+                data-toggle="modal"
+                data-target="#composeModal"
               >
                 Reply
               </button>

@@ -60,7 +60,6 @@ export class Inbox extends Component {
     /* remove the message at idx */
     messages.splice(idx, 1);
     this.setState({ messages, deleted });
-    return false;
   }
 
   toggleMarkAll() {
@@ -105,7 +104,7 @@ export class Inbox extends Component {
     return (
       <div>
         <InboxHtml parent={this} />
-        <ModalCompose />
+        <ModalCompose sendTo={this.state.selected.fromAddress} />
         <ModalMessage ref={this.ModalMessage} message={this.state.selected} />
       </div>
     );

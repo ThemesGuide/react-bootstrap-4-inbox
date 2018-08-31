@@ -7,7 +7,7 @@ export const InboxHtml = ({ parent }) => {
       <div className="row">
         <div className="col-12 px-4 d-flex flex-column">
           <div className="row">
-            <div className="col-md-3 py-3">
+            <div className="col-lg-3 col-md-4 py-3">
               <ul className="list-group sticky-top sticky-offset">
                 <button
                   className="btn btn-block btn-outline-secondary my-1 text-uppercase"
@@ -18,7 +18,7 @@ export const InboxHtml = ({ parent }) => {
                 </button>
                 <div className="nav nav-pills py-2 flex-md-column justify-content-center">
                   <a
-                    href={true.toString()}
+                    href={{ void: 0 }}
                     className="nav-link active"
                     title="Messages"
                     data-toggle="tab"
@@ -27,12 +27,18 @@ export const InboxHtml = ({ parent }) => {
                     <span className="icon icon-envelope fa fa-fw fa-envelope mr-md-1" />
                     <span className="d-none d-md-inline">Messages</span>
                     <span
-                      className="badge badge-pill badge-primary"
+                      className="badge badge-pill badge-dark small font-weight-light ml-1"
                       title="Unread"
-                    />
+                    >
+                      {
+                        parent.state.messages.filter((v, k) => {
+                          return !v.read;
+                        }).length
+                      }
+                    </span>
                   </a>
                   <a
-                    href={true.toString()}
+                    href={{ void: 0 }}
                     className="nav-link"
                     title="Deleted"
                     data-toggle="tab"
@@ -40,9 +46,15 @@ export const InboxHtml = ({ parent }) => {
                   >
                     <span className="icon icon-trash fa fa-fw fa-trash mr-md-1" />
                     <span className="d-none d-md-inline">Deleted</span>
+                    <span
+                      className="badge badge-pill badge-dark small font-weight-light ml-1"
+                      title="Deleted"
+                    >
+                      {parent.state.deleted.length}
+                    </span>
                   </a>
                   <a
-                    href={true.toString()}
+                    href={{ void: 0 }}
                     className="nav-link"
                     title="Drafts"
                     data-toggle="tab"
@@ -50,16 +62,6 @@ export const InboxHtml = ({ parent }) => {
                   >
                     <span className="icon icon-pencil fa fa-fw fa-edit mr-md-1" />
                     <span className="d-none d-md-inline">Drafts</span>
-                  </a>
-                  <a
-                    href={true.toString()}
-                    className="nav-link"
-                    title="Calendar"
-                    data-toggle="tab"
-                    data-target="#calendar"
-                  >
-                    <span className="icon icon-calendar fa fa-calendar fa-fw mr-md-1" />
-                    <span className="d-none d-md-inline">Calendar</span>
                   </a>
                 </div>
                 <div className="d-md-block d-none">
@@ -110,7 +112,6 @@ export const InboxHtml = ({ parent }) => {
                         />
                         <div className="dropdown-menu" id="dd1">
                           <a
-                            href={true.toString()}
                             className="dropdown-item"
                             onClick={parent.deleteMarked}
                           >
@@ -173,7 +174,6 @@ export const InboxHtml = ({ parent }) => {
                             </div>
                             <div className="col-auto px-0 order-last order-sm-2 d-none d-sm-block align-self-center text-right">
                               <a
-                                href={true.toString()}
                                 className="text-secondary px-md-1"
                                 title="Deleted"
                                 onClick={() => parent.doDelete(idx)}
@@ -181,7 +181,10 @@ export const InboxHtml = ({ parent }) => {
                                 <span className="icon icon-trash fa fa-fw fa-trash" />
                               </a>
                             </div>
-                            <div className="col-sm-12 col-10 py-2 order-3">
+                            <div
+                              className="col-sm-12 col-10 py-2 order-3"
+                              onClick={() => parent.doShow(idx)}
+                            >
                               <div className="float-right text-right">
                                 <span
                                   className={
@@ -194,7 +197,6 @@ export const InboxHtml = ({ parent }) => {
                               </div>
                               <p className="lead mb-0">
                                 <a
-                                  href={true.toString()}
                                   title={
                                     !item.read
                                       ? "This is a new message"
@@ -205,8 +207,15 @@ export const InboxHtml = ({ parent }) => {
                                   {item.subject}
                                 </a>
                                 {item.attachment ? (
-                                  <i className="align-middle icon-paper-clip" />
+                                  <i className="align-middle fa fa-paperclip icon-paper-clip" />
                                 ) : null}
+                                <button
+                                  type="button"
+                                  className="btn btn-outline-secondary btn-sm ml-2"
+                                  onClick={() => parent.doShow(idx)}
+                                >
+                                  Open
+                                </button>
                               </p>
                             </div>
                           </summary>
