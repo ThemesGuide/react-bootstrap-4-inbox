@@ -1,7 +1,7 @@
 React + Bootstrap 4 Inbox
 ==
 
-![React Inbox Screenshot](https://pbs.twimg.com/media/Dl7aY_5VsAAQImX.jpg)
+<a href="https://llzykynvnq.codesandbox.io" target="_new"><img src="https://pbs.twimg.com/media/Dl7aY_5VsAAQImX.jpg" alt="React Inbox Screenshot"/></a>
 
 Demo: <https://llzykynvnq.codesandbox.io/>
 
