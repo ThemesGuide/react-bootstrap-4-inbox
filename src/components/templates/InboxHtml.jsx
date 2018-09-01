@@ -211,7 +211,7 @@ export const InboxHtml = ({ parent }) => {
                                 ) : null}
                                 <button
                                   type="button"
-                                  className="btn btn-outline-secondary btn-sm ml-2"
+                                  className="btn btn-outline-secondary btn-sm ml-2 d-none d-md-inline"
                                   onClick={() => parent.doShow(idx)}
                                 >
                                   Open

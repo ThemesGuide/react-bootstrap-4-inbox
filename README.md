@@ -34,7 +34,7 @@ Demonstrated Concepts
 - Read data from a .json file in ReactJs
 - Separate Component and template HTML in ReactJs (Inbox.js & InboxHtml.jsx)
 - Share data/state between child to parent Component
-- Use and importing Bootstrap CSS and Js in ReactJs
+- Use and import Bootstrap CSS and Js in ReactJs
 - Open a Bootstrap 4 Modal in ReactJs
 - Update a single object property in React State array (Inbox.js)
 - Delete multiple items in a React State array
